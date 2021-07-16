@@ -1,6 +1,9 @@
-import { VercelRequest, VercelResponse } from '@vercel/node';
+import express from 'express';
 
-export default (request: VercelRequest, response: VercelResponse) => {
-  const { name = 'World' } = request.query;
-  response.status(200).send(`Hello ${name}!`);
-};
+const app = express();
+app.use(express.json());
+
+app.get('/', (req, res) => res.send('test-get'));
+app.post('/', (req, res) => res.send('test-post'));
+
+export default { path: '/api/hello', handler: app };
