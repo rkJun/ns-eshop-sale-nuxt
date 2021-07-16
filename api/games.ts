@@ -6,7 +6,12 @@ app.use(express.json());
 
 app.get('/', async (req, res) => {
 
-  const { country, language, count, offset } = req.query as any;
+  const {
+    country = 'KR',
+    language = 'ko',
+    count = 10,
+    offset = 0
+  } = req.query as any;
 
   const apiResponse: ApiResponse = await getSaleGames({
     country,
@@ -15,7 +20,7 @@ app.get('/', async (req, res) => {
     offset
   });
 
-  return res.send(apiResponse);
+  res.send(apiResponse);
 });
 
 export default { path: '/api/games', handler: app };
