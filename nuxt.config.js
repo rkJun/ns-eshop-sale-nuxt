@@ -43,7 +43,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
-  serverMiddleware: ['~/api/hello', '~/api/games'],
+  serverMiddleware: ['~/api/hello.ts', '~/api/games.ts'],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
