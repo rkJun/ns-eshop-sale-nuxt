@@ -3,8 +3,8 @@ import colors from 'vuetify/es5/util/colors';
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - es-shop-sale-nuxt',
-    title: 'es-shop-sale-nuxt',
+    titleTemplate: '%s - ns-eshop-sale-nuxt',
+    title: 'ns-eshop-sale-nuxt',
     htmlAttrs: {
       lang: 'en',
     },

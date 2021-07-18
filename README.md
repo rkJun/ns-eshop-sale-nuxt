@@ -1,4 +1,4 @@
-# es-shop-sale-nuxt
+# ns-eshop-sale-nuxt
 
 ## Build Setup
 

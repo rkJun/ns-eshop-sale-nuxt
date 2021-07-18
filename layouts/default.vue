@@ -61,7 +61,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'es-shop-sale-nuxt',
+      title: 'ns-eshop-sale-nuxt',
     };
   },
 };
